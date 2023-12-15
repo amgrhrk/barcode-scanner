@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Barcode Scanner</title>
+	<link rel="manifest" href="./manifest.json">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./scripts/quagga.min.js"></script>
+	<script src="./scripts/index.js" defer></script>
+	<script>navigator.serviceWorker.register('./scripts/index.sw.js')</script>
+</head>
+<body>
+	<h1>Barcode Scanner</h1>
+	<div id="barcode-scanner"></div>
+	<div class="button">
+		<button>Copy CSV</button>
+	</div>
+	<div class="error"></div>
+	<ul class="barcode"></ul>
+</body>
+</html>
